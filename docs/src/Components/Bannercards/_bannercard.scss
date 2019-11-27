@@ -1,0 +1,97 @@
+.bannercardcontainer{
+    max-width: 100%;
+    display: flex;
+    .bannercard{
+        width: 33.4%;
+        height: 400px;
+        position: relative;
+        // border: 1px solid black;
+        .imgcontainer{
+            position: relative;
+            z-index: -1;
+            .cardimg{
+                max-width: 100%;
+                width: 100%;
+                height: 400px;
+            }
+        }
+        .carddetails{
+            padding-left: 20px;
+            color: #ffffff;
+            position: absolute;
+            bottom: 15%;
+            // border: 1px solid;
+            .cardtag{
+                display: flex;
+                .cardviews{
+                    padding-top: 10px;
+                    padding-left: 30px;
+                }
+            }
+            .cardname{
+                height: auto;
+                font-size: 12px;
+                text-align: center;
+                // width: 20%;
+                padding-top: 3px;
+                margin-bottom: 10px;
+                padding-bottom: 3px;
+                padding-right: 10px;
+                padding-left: 10px;
+                // border-radius: 10px;
+            }
+            .cardviews{
+                // border: 1px solid;
+                // text-align: center;
+                // background-position: center;
+                font-size: 13px;
+                margin-top: -8px;
+                // margin-bottom: 20px;
+                // padding-bottom: 3px;
+                padding-right: 20px;
+            }
+            h3{
+                font-size: 17px;
+            }
+            b{
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:600px){
+    .bannercardcontainer{
+        display: block;
+        .bannercard{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width:1140px) and (min-width:601px){
+    .bannercardcontainer{
+        .bannercard{
+            .carddetails{
+                .cardtag{
+                    .cardname{
+                        width: 30%;
+                        span{
+                            font-size: 13px;
+                        }
+                    }
+                    .cardviews{
+                        font-size: 13px;
+                    }
+                }
+                h3{
+                    font-size: 15px;
+                }
+                b{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

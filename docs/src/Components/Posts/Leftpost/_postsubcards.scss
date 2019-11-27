@@ -1,0 +1,95 @@
+.postsubcardscontainer{
+    margin-top: 37px;
+    // border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .postsubcardscontent{
+        // border: 1px solid;
+        display: flex;
+        justify-content: space-around;
+        // padding-top: 20px;
+        padding-bottom: 20px;
+        width: 48%;
+        .postsubcardsimgcontainer{
+            // border: 1px solid peru;
+            width: 80px;
+            height: 80px;
+            .postsubcardsimg{
+                width: 80px;
+                height: 80px; 
+            }
+        }
+        .postsubcardstext{
+            padding-top: -10px;
+            margin-top: -10px;
+            padding-left: 20px;
+            h4{
+                font-size: 15px;
+                margin-bottom: 0px;
+            }
+            .postsubcardsauthor{
+                color: #808081;
+                margin-top: -30px;
+                padding-top: -10px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:600px){
+    .postsubcardscontainer{
+        max-width: 100%;
+        display: block;
+        .postsubcardscontent{
+            width: 100%;
+            max-width: 100%;
+            .postsubcardsimgcontainer{
+                width: 80px;
+                height: 80px;
+                .postsubcardsimg{
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+            .postsubcardstext{
+                h4{
+                    // padding-top: -10px;
+                    font-size: 12px;
+                }
+                .postsubcardsauthor{
+                    display: none;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1140px) and (min-width:601px){
+    .postsubcardscontainer{
+        max-width: 100%;
+        .postsubcardscontent{
+            max-width: 100%;
+            .postsubcardsimgcontainer{
+                height: 60px;
+                width: 60px;
+                .postsubcardsimg{
+                    height: 60px;
+                    width: 60px;
+                }
+            }
+        }
+        .postsubcardstext{
+            h4{
+                margin-top: -8px;
+                font-size: 13px;
+            }
+            .postsubcardsauthor{
+                margin-top: -10px;
+                font-size: 10px;
+            }
+        }
+    }   
+}

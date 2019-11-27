@@ -1,0 +1,86 @@
+.middlefooter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    color: #59595a;
+    padding-bottom: 30px;
+    .middlefootertextcontainer{
+        width: 30%;
+        max-width: 100%;
+        .middlefootertext{
+            font-weight: 500;
+            font-size: 15px;
+        }
+        .socialiconcontainer{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            .twitter{
+                background-color: #31aae2;
+                width: 30px;
+                height: 30px;
+            }
+            .facebook{
+                background-color: #0b5fa6;
+                width: 30px;
+                height: 30px;
+            }
+            .dribble{
+                background-color: #e11396;
+                width: 30px;
+                height: 30px;
+            }
+            .instagram{
+                background-color: #313131;
+                width: 30px;
+                height: 30px;
+            }
+            .pinterest{
+                background-color: #f52450;
+                width: 30px;
+                height: 30px;
+            }
+            .icons{
+                color: #fff;
+                padding-top: 7px;
+                padding-left: 7px;
+                transform: translate(-50% -50%);
+            }
+        }
+    }
+    .middlefooterlist1{
+        list-style-type: none;
+        .middlefooterlistcomponent{
+            cursor: pointer;
+            line-height: 2;
+            font-weight: 600;
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width:700px){
+    .middlefooter{
+        display: none;
+    }
+}
+@media only screen and (max-width:1140px) and (min-width:701px){
+    .middlefooter{
+        padding-bottom: 30px;
+        .middlefootertextcontainer{
+            .middlefootertext{
+                font-size: 10px;
+            }
+            .socialiconcontainer{
+                visibility: hidden;
+            }   
+        }
+        .middlefooterlist1{
+            .middlefooterlistcomponent{
+                line-height: 1;
+                font-size: 10px;
+            }
+        }
+    }
+}

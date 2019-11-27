@@ -1,0 +1,43 @@
+@import './Leftpost/postnav';
+@import './Leftpost/post1';
+@import './Leftpost/postcards';
+@import './Leftpost/postnav1';
+@import './Leftpost/postsubcards';
+@import './Rightpost/socialcards';
+@import './Rightpost/popularpost';
+@import './Rightpost/rightpostcards';
+@import './Rightpost/instagramcards';
+@import './Leftpost/leftpostsubcards1';
+@import './Leftpost/leftpostsubcardright';
+@import './Leftpost/videoplay';
+.mainpostback{
+    background-color: #f5f5f5;
+}
+.mainpostcontainer{
+    
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    .leftpost{
+        // border: 1px solid red;
+        width: 65%;
+    }
+    .rightpost{
+        // border: 1px solid yellow;
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .mainpostcontainer{
+        display: block;
+        .leftpost{
+            width: 100%;
+            max-width: 100%;
+        }
+        .rightpost{
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}

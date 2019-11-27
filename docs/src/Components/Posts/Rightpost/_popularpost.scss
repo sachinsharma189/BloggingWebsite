@@ -1,0 +1,64 @@
+.popularpostcontainer{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 24px;
+    background-color: #fff;
+    padding-top: 5px;
+    .postheading{
+        font-size: 16px;
+        padding-left: 15px;
+    }
+    .popularpost{
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+        position: relative;
+        .popularimgcontainer{
+            // z-index: -1;
+            position: relative;
+            width: 100%;
+            height: auto;
+            .popularimg{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .popularpostdetails{
+            position: absolute;
+            bottom: 4%;
+            padding-left: 15px;
+            color: #fff;
+            .popularposttag{
+                display: flex;
+                font-size: 14px;
+                .popularpostname{
+                    font-size: 14px;
+                    border-radius: 5px;
+                    // margin-left: 10px;
+                    padding: 5px; 
+                }
+                .popularpostviews{
+                    padding-top: 5px;
+                    padding-left: 20px;
+                }
+            }
+            .popularposttitle{
+                font-weight: 600;
+            }
+            .popularpostauthor{
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1140px) and (min-width:601px){
+    .popularpostcontainer{
+        .postheading{
+            font-size: 13px;
+        }
+        .popularpost{
+            display: none;
+        }
+    }
+}

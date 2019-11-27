@@ -1,0 +1,70 @@
+.socialcardscontainer{
+    width: 90%;
+    margin: 0 auto;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px;
+    flex-wrap: wrap;
+    .socialcardscontent{
+        // border: 1px solid green;
+        width: 30%;
+        height: 170px;
+        margin-top: 10px;
+        .socialiconcontainer{
+            margin-top: 20px;
+        }
+        .socialicon{
+            margin: 0 auto;
+            border-radius: 80%;
+            width: 60px;
+            height: 60px;
+            .socialiconimg{
+                margin-top: 30px;
+                margin-left: 30px;
+                transform: translate(-50%,-50%);
+            }
+        }
+        .socialcardstext{
+            text-align: center;
+            color: #fff;
+            padding-top: 20px;
+            font-size: 16px;
+            // margin-left: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width : 600px){
+    .socialcardscontainer{
+        .socialcardscontent{
+            .socialcardstext{
+                font-size: 12px;
+            }   
+        }
+        
+    }
+}
+@media only screen and (max-width:1140px) and (min-width:601px){
+    .socialcardscontainer{
+        .socialcardscontent{
+            width: 48%;
+            .socialiconcontainer{
+            }
+            .socialicon{
+               height: 40px;
+               width: 40px;
+               margin: 0 auto;  
+               .socialiconimg{
+                   margin-top: 20px;
+                   margin-left: 20px;
+                   transform: translate(-50%,-50%);
+               }   
+            }
+            .socialcardstext{
+                margin-top: 10px;
+                font-size: 15px;
+            }   
+        }
+    }
+}

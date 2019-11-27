@@ -1,0 +1,91 @@
+.leftpostsubcardscontainer{
+    // border: 1px solid;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    .leftpostcardscontent{
+        width: 50%;
+        height: auto;
+        .leftpostcardsimgcontainer{
+            width: 100%;
+            height: auto;
+            .leftpostcardsimg{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .leftpostcardtext{
+            margin-top: 20px;
+            .leftpostcardviews{
+                font-size: 12px;
+                .category{
+                    font-size: 13px;
+                    color: #fff;
+                    padding: 5px 5px 5px 20px;
+                    margin-right: 20px;
+                }
+            }
+            .leftcontentcontainer{
+                margin-left: 20px;
+                .leftpostcardtitle{
+                    font-size: 18px;
+                }
+                b{
+                    color: #807f7f;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:600px){
+    .leftpostsubcardscontainer{
+        display: block;
+        .leftpostcardscontent{
+            width: 100%;
+            max-width: 100%;
+        }
+        .leftpostcardviews{
+            span{
+                font-size: 13px;
+            }
+        }
+        .leftcontentcontainer{
+            .leftpostcardtitle{
+                font-size: 15px;
+            }
+            b{
+                font-size: 10px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1140px) and (min-width:601px){
+    .leftpostsubcardscontainer{
+        .leftpostcardtext{
+            .leftpostcardviews{
+                .category{
+                }
+                span{
+                    font-size: 12px;
+                }
+            }
+            .leftcontentcontainer{
+                .leftpostcardtitle{
+                    font-size: 13px;
+                }
+                b{
+                    font-size: 10px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

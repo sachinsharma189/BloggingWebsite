@@ -1,0 +1,98 @@
+.postcardscontainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+    .postcardscontent{
+        background-color: #fff;
+        width: 48%;
+        .postcardsimgcontainer{
+            width: 100%;
+            max-width: 100%;
+            .postcardsimg{
+                width: 100%;
+                height: 200px;
+            }
+        }
+        .postcardtext{
+            .postcardviews{
+                padding-top: 30px;
+                font-size: 10px;
+                .category{
+                    margin-right: 20px;
+                    color: #fff;
+                    padding: 5px 10px 5px 20px;
+                }
+            }
+            .contentcontainer{
+                .postcardtitle{
+                    font-size: 18px;
+                }
+                padding-left: 30px;
+                b{
+                    font-size: 11px;
+                    color: #888888;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:600px){
+    .postcardscontainer{
+        display: block;
+        .postcardscontent{
+            width: 100%;
+            max-width: 100%;
+        }
+        .postcardsimgcontainer{
+            max-width: 100%;
+            .postcardsimg{
+                max-width: 100%;
+            }
+        }
+        .postcardtext{
+            .postcardviews{
+                font-size: 12px;
+                .category{
+                    margin-right: 0px;
+                }
+            }
+        }
+        .contentcontainer{
+            .postcardtitle{
+                font-size: 15px;
+            }
+            b{
+                font-size: 10px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1140px) and (min-width:601px){
+    .postcardscontainer{
+        .postcardtext{
+            .postcardviews{
+                font-size: 12px;
+            }
+            .contentcontainer{
+                .postcardtitle{
+                    font-size: 15px;
+                }
+                b{
+                    font-size: 10px;
+                }
+                p{
+                    font-size: 12px;
+                }   
+            }
+        }
+    }
+}
